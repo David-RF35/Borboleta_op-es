@@ -1,9 +1,11 @@
 programa
-{//ALGORITMO PARA CALCULAR O PREÇO DE UMA BORBOLETA DE OPÇÕES
+{
+//ALGORITMO PARA CALCULAR O PREÇO DE UMA BORBOLETA DE OPÇÕES
+//as asas são os valores de strike escolhidos para montar a operação, para o ex:borboleta 20; 21; 22...asa1=20; asa2=21; asa3=22	
 	
 	funcao inicio()
 	{
-		real asa1_p,asa2_m,asa3_p
+		real asa1_p,asa2_m,asa3_p 
 		real valor_bb
 		
 		escreva("entre com o valor da asa 1 \n")
@@ -19,6 +21,7 @@ programa
 
 		se(valor_bb<=0.14){
 			
+			//esses parametros são observacionais segundo analista xp corretora.
 			escreva("Borboleta está barata, possivel entrada ok \n")
 			}
 			
